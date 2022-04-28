@@ -1,0 +1,237 @@
+/* CSS reset */
+*{
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+
+}
+/* CSS Variable */
+:root
+{
+    --navbar-height:60px;
+}
+/* navigation */
+#navbar
+{
+position: relative;
+top: 0;
+display: flex;
+align-items: center;
+
+
+}
+#navbar::before
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+/*navigation logo and img */
+#logo
+{
+    margin: 5px 20px;
+
+}
+#logo img
+{
+height: 45px;
+margin: 3px 3px;
+
+}
+
+/*navigation list styling */
+#navbar ul
+{
+    display: flex;
+}
+#navbar ul li
+{
+    list-style: none;
+    font-size: 1.2rem;
+    
+
+}
+#navbar ul li a
+{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+
+}
+#navbar ul li a:hover
+{
+    color: black;
+    background-color: white;
+}
+/* Home section */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* justify-content: center; */
+    height: 300px;
+    align-items: center;
+    
+   
+
+}
+#home::before
+{
+    content: "";
+    position:absolute;
+    top:0;
+    left: 0;
+    height: 51%;
+    width: 100%;
+    background:url('../bg.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.p-primary
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    
+}   
+.btn
+{
+    padding: 10px 30px;
+    margin: 10px ;
+    border-radius: 20px;
+    color: blanchedalmond;
+    color: black;
+    border:2px solid white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover
+{
+    color: red;
+    border: 2px solid red;
+
+    
+}
+/* services Section */
+
+
+.sevices_container
+{
+    /* border: 2px solid red; */
+}
+
+#service h1
+{
+    text-transform: capitalize;
+    font-size: 3.8rem ;
+    /* color:white; */
+    padding: 12px;
+    text-align: center;
+}
+#services h2{
+    font-size: 1.5rem;
+}
+#services p
+{
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+#services
+{
+    margin: 0px 30px;
+    display: flex;
+
+}
+#services .box
+{
+    border: 2px solid red;
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: rgb(252, 227, 227);
+   
+    
+
+}
+#services .box img
+{
+    display: block;
+    height: 150px;
+    border-radius: 10px;
+    margin: auto;
+}
+/* clinet section */
+
+#clinet-section
+{
+    /* border: 2px solid red; */
+    height: 319px;
+}
+#client
+
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item
+{
+    padding: 34px;
+}
+#client img
+{
+    height: 50px;
+
+}
+#client::before
+{
+    content: "";
+    position: absolute;
+    background: url('/bg1.jpg')no-repeat center center/cover ;
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.4;
+    
+
+}
+
+
+
+
+
+/* utlitiy class */
+.h-primary
+{
+    text-transform: capitalize;
+    font-size: 3.8rem ;
+    /* color:white; */
+    padding: 12px;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+.center
+{
+    text-align: center;
+}
+.h-secondary
+{
+
+}
+.text-justify
+{
+    text-align: justify;
+}
